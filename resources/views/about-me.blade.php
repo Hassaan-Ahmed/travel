@@ -2,24 +2,24 @@
 @section('content')
 <div id="content" role="main">
     <section class="section swatch-red-white text-center">
-        @if($about)
+        @if($abouts)
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="box-round flat-shadow box-huge">
                         <div class="box-dummy"></div>
                         <figure class="box-inner">
-                            <img class="svg-inject" src="{{$about->photo ? asset($about->photo->file) : asset('images/404.png')}}" alt="a man with a mustache">
+                            <img class="svg-inject" src="{{$abouts->photo ? asset($about->photo->file) : asset('images/404.png')}}" alt="a man with a mustache">
                             <figcaption class="box-caption">
                                 <h4>Likes</h4>
                                 <p>Coffee</p>
                             </figcaption>
                         </figure>
                     </div>
-                    <h1>{{$about->name}}</h1>
-                    <p class="lead">{{$about->title}}</p>
-                    <p class="lead">+92300{{$about->contact}}</p>
-                    <p class="lead">{{$about->description}}</p>
+                    <h1>{{$abouts->name}}</h1>
+                    <p class="lead">{{$abouts->title}}</p>
+                    <p class="lead">+92300{{$abouts->contact}}</p>
+                    <p class="lead">{{$abouts->description}}</p>
                     <ul class="list-inline text-center social-icons social-simple">
                         <li>
                             <a href="#">

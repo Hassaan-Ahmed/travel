@@ -75,8 +75,8 @@ class AdminAboutController extends Controller
      */
     public function show($id)
     {
-        $about = About::findOrFail($id);
-        return view('about-me',compact('about'));
+        $abouts = About::findOrFail($id);
+        return view('about-me',compact('abouts'));
     }
 
     /**
